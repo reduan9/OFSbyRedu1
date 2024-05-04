@@ -1,0 +1,602 @@
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu> <http://www.w3.org/2000/01/rdf-schema#comment> "@Author:\nReduan Azouaghe El Hadmi" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_airline
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_airline> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_airline> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a flight or travel experience to the airline associated with it" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_airline> <http://www.w3.org/2000/01/rdf-schema#label> "has_airline" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_author
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_author> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_author> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a comment or review to its author" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_author> <http://www.w3.org/2000/01/rdf-schema#label> "has_author" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_negative_review
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_negative_review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_negative_review> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_negative_review> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a flight or travel experience to a negative review" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_negative_review> <http://www.w3.org/2000/01/rdf-schema#label> "has_negative_review" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_other_rating
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_other_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_other_rating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_other_rating> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a flight or travel experience to additional scores provided by passengers for specific aspects of their journe" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_other_rating> <http://www.w3.org/2000/01/rdf-schema#label> "has_other_rating" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_positive_review
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_positive_review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_positive_review> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_positive_review> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a flight or travel experience to a positive review" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_positive_review> <http://www.w3.org/2000/01/rdf-schema#label> "has_positive_review" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_rating
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_rating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_rating> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a flight or travel experience to an overall rating" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_rating> <http://www.w3.org/2000/01/rdf-schema#label> "has_rating" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an airline, seat type, or other aspect of travel to recommendations" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended> <http://www.w3.org/2000/01/rdf-schema#label> "has_recommended" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended_wifi_connectivity
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended_wifi_connectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended_wifi_connectivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended_wifi_connectivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Wifi_Conectivity> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended_wifi_connectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an wifi connectivity recommendations" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended_wifi_connectivity> <http://www.w3.org/2000/01/rdf-schema#label> "has_recommended_wifi_connectivity" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_satisfied_ground_service
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_satisfied_ground_service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_satisfied_ground_service> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Aircraft_Model> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_satisfied_ground_service> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "10"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_ground_service_rating> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_satisfied_ground_service> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an aircraft model to a satisfaction rating for ground services" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_satisfied_ground_service> <http://www.w3.org/2000/01/rdf-schema#label> "has_satisfied_ground_service" .
+# 
+# http://www.w3.org/2002/07/owl#topObjectProperty
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the top-level object property in the ontology hierarchy" .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "owl:topObjectProperty" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_flight_date
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_flight_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_flight_date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_flight_date> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the date of the flight associated with this entity" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_flight_date> <http://www.w3.org/2000/01/rdf-schema#label> "has_flight_date" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_ground_service_rating
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_ground_service_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_ground_service_rating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_ground_service_rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the ground service rating experienced by this entity during the journey" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_ground_service_rating> <http://www.w3.org/2000/01/rdf-schema#label> "has_ground_service_rating" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_passenger_country
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_passenger_country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_passenger_country> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_passenger_country> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the passenger's country of origin or nationality associated with this entity" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_passenger_country> <http://www.w3.org/2000/01/rdf-schema#label> "has_passenger_country" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_publication_date
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_publication_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_publication_date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_publication_date> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the date when this entity or related information was published" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_publication_date> <http://www.w3.org/2000/01/rdf-schema#label> "has_publication_date" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_seat_comfort_rating
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_seat_comfort_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_seat_comfort_rating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_seat_comfort_rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the seat comfort rating experienced by this entity during the journey" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_seat_comfort_rating> <http://www.w3.org/2000/01/rdf-schema#label> "has_seat_comfort_rating" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_title
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_title> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the title or name associated with this entity" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_title> <http://www.w3.org/2000/01/rdf-schema#label> "has_title" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_type_of_traveler
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_type_of_traveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_type_of_traveler> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_type_of_traveler> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the type of traveler targeted by this entity" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_type_of_traveler> <http://www.w3.org/2000/01/rdf-schema#label> "has_type_of_traveler" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_wifi_connectivity_rating
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_wifi_connectivity_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_wifi_connectivity_rating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_wifi_connectivity_rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the WiFi connectivity rating" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_wifi_connectivity_rating> <http://www.w3.org/2000/01/rdf-schema#label> "has_wifi_connectivity_rating" .
+# 
+# http://www.w3.org/2002/07/owl#topDataProperty
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the top-level object property in the ontology hierarchy" .
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "owl:topDataProperty" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Aircraft_Model
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Aircraft_Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Aircraft_Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Aircraft_Model> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents different models of aircraft used for commercial air travel" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Aircraft_Model> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft_Model" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Airline
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an airline company" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Airline> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Airplane"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Cabin_Staff_Service
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Cabin_Staff_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Cabin_Staff_Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Cabin_Staff_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents ratings of evaluations of the service provided by cabin crew members" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Cabin_Staff_Service> <http://www.w3.org/2000/01/rdf-schema#label> "Cabin_Staff_Service" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Airline> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_airline> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_rating> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a comment or review provided by a traveler about how was the flight" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment> <http://www.w3.org/2000/01/rdf-schema#label> "Comment" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Body
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Body> <http://www.w3.org/2000/01/rdf-schema#comment> "This class reperesents the textual content of a comment provided by a traveler" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Body> <http://www.w3.org/2000/01/rdf-schema#label> "Comment_Body" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents teh data associated with a comment provided by a traveler" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data> <http://www.w3.org/2000/01/rdf-schema#label> "Comment_Data" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Destination
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Destination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the final destination of a flight, where travelers arrive after their journey" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Destination> <http://www.w3.org/2000/01/rdf-schema#label> "Destination" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Destination> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/page/Destination"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents data associated with a specific flight, including information about different terms" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data> <http://www.w3.org/2000/01/rdf-schema#label> "Flight_Data" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Food_Beverages
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Food_Beverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Food_Beverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Food_Beverages> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents ratings or reviews related to the quality, variety, and availability of food and beverages served" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Food_Beverages> <http://www.w3.org/2000/01/rdf-schema#label> "Food_Beverages" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Ground_Service
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Ground_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Ground_Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Ground_Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_ground_service_rating> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Ground_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents ratings or evaluations of the services provided to passengers on the ground, like check-in," .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Ground_Service> <http://www.w3.org/2000/01/rdf-schema#label> "Ground_Service" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Inflight_Entertainment
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Inflight_Entertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Inflight_Entertainment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Inflight_Entertainment> <http://www.w3.org/2000/01/rdf-schema#comment> "his class represents ratings or assessments of the entertainment options available to passengers during a flight" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Inflight_Entertainment> <http://www.w3.org/2000/01/rdf-schema#label> "Inflight_Entretainment" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Origin
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the starting point or departure location of a flight, where travelers begin their journey" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Origin> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/page/Origin"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents teh overall ratings provided by travelers for especific aspects of their trip experience with the airline" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Other_Rating" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Passenger_Country
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Passenger_Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Passenger_Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Passenger_Country> <http://www.w3.org/2000/01/rdf-schema#comment> "This class reperesents the country of origin of a passenger who made a comment" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Passenger_Country> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger_Country" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> .
+_:genid5 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "7"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_other_rating> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "The class represents the overall rating assigned to a travel experience, based on the amount that describes each factor such as ground_service or seat_comfort" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Recommended
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Recommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents recommendations provided by travelers based on their experience" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Recommended> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Confort
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Confort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Confort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Confort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_seat_comfort_rating> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Confort> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents ratings or feedback on the comfort level of seats onboard an aircraft" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Confort> <http://www.w3.org/2000/01/rdf-schema#label> "Seat_Comfort" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Type
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Type> <http://www.w3.org/2000/01/rdf-schema#comment> "his class represents different types of seating arrangements available on flights" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Type> <http://www.w3.org/2000/01/rdf-schema#label> "Seat_Type" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Type> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/page/Aircraft_seat"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Traveler_Type
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Traveler_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Traveler_Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Traveler_Type> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents different types of travelers" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Traveler_Type> <http://www.w3.org/2000/01/rdf-schema#label> "Traveler_Type" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Value_Money
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Value_Money> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Value_Money> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Value_Money> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents ratings or assessments of the overall value or cost-effectiveness of a travel experience in relation to the price paid for it" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Value_Money> <http://www.w3.org/2000/01/rdf-schema#label> "Value_Money" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Verified
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Verified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Verified> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the verification status of a travel review" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Verified> <http://www.w3.org/2000/01/rdf-schema#label> "Verified" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Wifi_Conectivity
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Wifi_Conectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Wifi_Conectivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Wifi_Conectivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_wifi_connectivity_rating> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Wifi_Conectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents ratings or feedback regarding the availability, speed, and reliability of WiFi connectivity onboard" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Wifi_Conectivity> <http://www.w3.org/2000/01/rdf-schema#label> "Wifi_Connectivity" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Barcelona
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Boeing_737-800
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Boeing_737-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Boeing_737-800> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the aircraft model used for the trip" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Boeing_737-800> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing_737-800" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Boeing_737-800> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/page/Boeing_737-800"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Business
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Business> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the traveler type as business class" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Economy_Class
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Economy_Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Economy_Class> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the seat type as economy class" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Economy_Class> <http://www.w3.org/2000/01/rdf-schema#label> "Economy_Class" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Economy_Class> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/page/Economy_class"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Germany
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Germany> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents Germany as the country of the traveler" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Germany> <http://www.w3.org/2000/01/rdf-schema#label> "Germany" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Lisbon
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Lisbon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Lisbon> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents Lisbon as the destination of the trip" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Lisbon> <http://www.w3.org/2000/01/rdf-schema#label> "Lisbon" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Lisbon> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/page/Lisbon"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Trip_Verified
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Trip_Verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Trip_Verified> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#1> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Trip_Verified> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the trip taken by a passenger has been validated" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Trip_Verified> <http://www.w3.org/2000/01/rdf-schema#label> "Trip_Verified" .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#1
+# 
+# http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#1
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the trip taken by a passenger has been validated" .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#1> <http://www.w3.org/2000/01/rdf-schema#label> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a general entity in the class hierarchy" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid8 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Verified> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Origin> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Destination> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Aircraft_Model> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid13 <http://www.w3.org/2002/07/owl#members> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Airline> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid20 <http://www.w3.org/2002/07/owl#members> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Wifi_Conectivity> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Value_Money> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Confort> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Inflight_Entertainment> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Ground_Service> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Food_Beverages> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Cabin_Staff_Service> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid28 <http://www.w3.org/2002/07/owl#members> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Traveler_Type> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Type> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Recommended> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Passenger_Country> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Body> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/groundServiceRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/traveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/wifiRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid34 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#comment> "Ground_Service_Satisfied" .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#label> "R1" .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid34 <http://www.w3.org/2003/11/swrl#body> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#arguments> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/groundServiceRating> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/groundServiceRating> .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/model> .
+_:genid40 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_ground_service_rating> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/model> .
+_:genid42 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Aircraft_Model> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/2003/11/swrl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#comment> "Seats" .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#label> "R2" .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid43 <http://www.w3.org/2003/11/swrl#body> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#arguments> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/rating> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/rating> .
+_:genid49 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/flight> .
+_:genid49 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_seat_comfort_rating> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/traveler> .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/flight> .
+_:genid51 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_type_of_traveler> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/airline> .
+_:genid53 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/model> .
+_:genid53 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_airline> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/2003/11/swrl#head> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid55 .
+_:genid55 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/traveler> .
+_:genid55 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/airline> .
+_:genid55 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid56 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid56 <http://www.w3.org/2000/01/rdf-schema#comment> "Wifi" .
+_:genid56 <http://www.w3.org/2000/01/rdf-schema#label> "R3" .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid56 <http://www.w3.org/2003/11/swrl#body> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2003/11/swrl#arguments> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/wifiRating> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/wifiRating> .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/flight> .
+_:genid62 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_wifi_connectivity_rating> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid56 <http://www.w3.org/2003/11/swrl#head> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
+_:genid64 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/wifiRating> .
+_:genid64 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/flight> .
+_:genid64 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended_wifi_connectivity> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
