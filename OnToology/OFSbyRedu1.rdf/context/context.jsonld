@@ -1,0 +1,149 @@
+{
+  "@context" : {
+    "Inflight_Entertainment" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Inflight_Entertainment"
+    },
+    "Verified" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Verified"
+    },
+    "Comment" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment"
+    },
+    "Value_Money" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Value_Money"
+    },
+    "Passenger_Country" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Passenger_Country"
+    },
+    "Recommended" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Recommended"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "has_recommended_wifi_connectivity" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended_wifi_connectivity",
+      "@type" : "@id"
+    },
+    "Aircraft_Model" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Aircraft_Model"
+    },
+    "Other_Rating" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating"
+    },
+    "has_publication_date" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_publication_date"
+    },
+    "has_author" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_author",
+      "@type" : "@id"
+    },
+    "has_flight_date" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_flight_date"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "has_recommended" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended",
+      "@type" : "@id"
+    },
+    "Destination" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Destination"
+    },
+    "Seat_Type" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Type"
+    },
+    "Origin" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Origin"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Flight_Data" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data"
+    },
+    "has_rating" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_rating",
+      "@type" : "@id"
+    },
+    "Ground_Service" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Ground_Service"
+    },
+    "Wifi_Conectivity" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Wifi_Conectivity"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating"
+    },
+    "has_seat_comfort_rating" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_seat_comfort_rating"
+    },
+    "Seat_Confort" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Confort"
+    },
+    "Food_Beverages" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Food_Beverages"
+    },
+    "has_airline" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_airline",
+      "@type" : "@id"
+    },
+    "Cabin_Staff_Service" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Cabin_Staff_Service"
+    },
+    "has_title" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_title"
+    },
+    "has_passenger_country" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_passenger_country"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Airline"
+    },
+    "Comment_Data" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data"
+    },
+    "has_other_rating" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_other_rating",
+      "@type" : "@id"
+    },
+    "has_satisfied_ground_service" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_satisfied_ground_service",
+      "@type" : "@id"
+    },
+    "has_positive_review" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_positive_review",
+      "@type" : "@id"
+    },
+    "has_wifi_connectivity_rating" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_wifi_connectivity_rating"
+    },
+    "has_ground_service_rating" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_ground_service_rating"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "has_negative_review" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_negative_review",
+      "@type" : "@id"
+    },
+    "Comment_Body" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Body"
+    },
+    "Traveler_Type" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Traveler_Type"
+    },
+    "has_type_of_traveler" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_type_of_traveler"
+    }
+  }
+}
