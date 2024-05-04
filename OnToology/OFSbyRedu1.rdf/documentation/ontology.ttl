@@ -1,0 +1,600 @@
+@prefix : <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#> .
+
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu> rdf:type owl:Ontology ;
+                                                                  rdfs:comment """@Author:
+Reduan Azouaghe El Hadmi""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_airline
+:has_airline rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:comment "This property relates a flight or travel experience to the airline associated with it" ;
+             rdfs:label "has_airline" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_author
+:has_author rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:comment "This property relates a comment or review to its author" ;
+            rdfs:label "has_author" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_negative_review
+:has_negative_review rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:comment "This property relates a flight or travel experience to a negative review" ;
+                     rdfs:label "has_negative_review" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_other_rating
+:has_other_rating rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:comment "This property relates a flight or travel experience to additional scores provided by passengers for specific aspects of their journe" ;
+                  rdfs:label "has_other_rating" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_positive_review
+:has_positive_review rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:comment "This property relates a flight or travel experience to a positive review" ;
+                     rdfs:label "has_positive_review" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_rating
+:has_rating rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:comment "This property relates a flight or travel experience to an overall rating" ;
+            rdfs:label "has_rating" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended
+:has_recommended rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:comment "This property relates an airline, seat type, or other aspect of travel to recommendations" ;
+                 rdfs:label "has_recommended" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_recommended_wifi_connectivity
+:has_recommended_wifi_connectivity rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :Rating ;
+                                   rdfs:range :Wifi_Conectivity ;
+                                   rdfs:comment "This property relates an wifi connectivity recommendations" ;
+                                   rdfs:label "has_recommended_wifi_connectivity" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_satisfied_ground_service
+:has_satisfied_ground_service rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Aircraft_Model ;
+                              rdfs:range [ rdf:type owl:Restriction ;
+                                           owl:onProperty :has_ground_service_rating ;
+                                           owl:maxQualifiedCardinality "10"^^xsd:nonNegativeInteger ;
+                                           owl:onDataRange xsd:integer
+                                         ] ;
+                              rdfs:comment "This property relates an aircraft model to a satisfaction rating for ground services" ;
+                              rdfs:label "has_satisfied_ground_service" .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:comment "This property represents the top-level object property in the ontology hierarchy" ;
+                      rdfs:label "owl:topObjectProperty" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_flight_date
+:has_flight_date rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:comment "Indicates the date of the flight associated with this entity" ;
+                 rdfs:label "has_flight_date" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_ground_service_rating
+:has_ground_service_rating rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:comment "Represents the ground service rating experienced by this entity during the journey" ;
+                           rdfs:label "has_ground_service_rating" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_passenger_country
+:has_passenger_country rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:comment "Identifies the passenger's country of origin or nationality associated with this entity" ;
+                       rdfs:label "has_passenger_country" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_publication_date
+:has_publication_date rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:comment "Represents the date when this entity or related information was published" ;
+                      rdfs:label "has_publication_date" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_seat_comfort_rating
+:has_seat_comfort_rating rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:comment "Indicates the seat comfort rating experienced by this entity during the journey" ;
+                         rdfs:label "has_seat_comfort_rating" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_title
+:has_title rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:comment "Indicates the title or name associated with this entity" ;
+           rdfs:label "has_title" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_type_of_traveler
+:has_type_of_traveler rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:comment "Identifies the type of traveler targeted by this entity" ;
+                      rdfs:label "has_type_of_traveler" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#has_wifi_connectivity_rating
+:has_wifi_connectivity_rating rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf owl:topDataProperty ;
+                              rdfs:comment "Describes the WiFi connectivity rating" ;
+                              rdfs:label "has_wifi_connectivity_rating" .
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdfs:comment "This property represents the top-level object property in the ontology hierarchy" ;
+                    rdfs:label "owl:topDataProperty" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Aircraft_Model
+:Aircraft_Model rdf:type owl:Class ;
+                rdfs:subClassOf :Flight_Data ;
+                rdfs:comment "This class represents different models of aircraft used for commercial air travel" ;
+                rdfs:label "Aircraft_Model" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Airline
+:Airline rdf:type owl:Class ;
+         rdfs:comment "This class represents an airline company" ;
+         rdfs:label "Airline" ;
+         rdfs:sameAs "https://dbpedia.org/page/Airplane"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Cabin_Staff_Service
+:Cabin_Staff_Service rdf:type owl:Class ;
+                     rdfs:subClassOf :Other_Rating ;
+                     rdfs:comment "This class represents ratings of evaluations of the service provided by cabin crew members" ;
+                     rdfs:label "Cabin_Staff_Service" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment
+:Comment rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :has_airline ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Airline
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :has_rating ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Rating
+                             ] ;
+         rdfs:comment "This class represents a comment or review provided by a traveler about how was the flight" ;
+         rdfs:label "Comment" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Body
+:Comment_Body rdf:type owl:Class ;
+              rdfs:subClassOf :Comment_Data ;
+              rdfs:comment "This class reperesents the textual content of a comment provided by a traveler" ;
+              rdfs:label "Comment_Body" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Comment_Data
+:Comment_Data rdf:type owl:Class ;
+              rdfs:subClassOf :Comment ;
+              rdfs:comment "This class represents teh data associated with a comment provided by a traveler" ;
+              rdfs:label "Comment_Data" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Destination
+:Destination rdf:type owl:Class ;
+             rdfs:subClassOf :Flight_Data ;
+             rdfs:comment "This class represents the final destination of a flight, where travelers arrive after their journey" ;
+             rdfs:label "Destination" ;
+             rdfs:sameAs "http://dbpedia.org/page/Destination"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Flight_Data
+:Flight_Data rdf:type owl:Class ;
+             rdfs:subClassOf :Comment ;
+             rdfs:comment "This class represents data associated with a specific flight, including information about different terms" ;
+             rdfs:label "Flight_Data" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Food_Beverages
+:Food_Beverages rdf:type owl:Class ;
+                rdfs:subClassOf :Other_Rating ;
+                rdfs:comment "This class represents ratings or reviews related to the quality, variety, and availability of food and beverages served" ;
+                rdfs:label "Food_Beverages" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Ground_Service
+:Ground_Service rdf:type owl:Class ;
+                rdfs:subClassOf :Other_Rating ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :has_ground_service_rating ;
+                                  owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:integer
+                                ] ;
+                rdfs:comment "This class represents ratings or evaluations of the services provided to passengers on the ground, like check-in," ;
+                rdfs:label "Ground_Service" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Inflight_Entertainment
+:Inflight_Entertainment rdf:type owl:Class ;
+                        rdfs:subClassOf :Other_Rating ;
+                        rdfs:comment "his class represents ratings or assessments of the entertainment options available to passengers during a flight" ;
+                        rdfs:label "Inflight_Entretainment" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Origin
+:Origin rdf:type owl:Class ;
+        rdfs:subClassOf :Flight_Data ;
+        rdfs:comment "This class represents the starting point or departure location of a flight, where travelers begin their journey" ;
+        rdfs:label "Origin" ;
+        rdfs:sameAs "http://dbpedia.org/page/Origin"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Other_Rating
+:Other_Rating rdf:type owl:Class ;
+              rdfs:subClassOf :Rating ;
+              rdfs:comment "This class represents teh overall ratings provided by travelers for especific aspects of their trip experience with the airline" ;
+              rdfs:label "Other_Rating" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Passenger_Country
+:Passenger_Country rdf:type owl:Class ;
+                   rdfs:subClassOf :Comment_Data ;
+                   rdfs:comment "This class reperesents the country of origin of a passenger who made a comment" ;
+                   rdfs:label "Passenger_Country" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:subClassOf :Comment ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :has_other_rating ;
+                          owl:maxQualifiedCardinality "7"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Other_Rating
+                        ] ;
+        rdfs:comment "The class represents the overall rating assigned to a travel experience, based on the amount that describes each factor such as ground_service or seat_comfort" ;
+        rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Recommended
+:Recommended rdf:type owl:Class ;
+             rdfs:subClassOf :Comment_Data ;
+             rdfs:comment "This class represents recommendations provided by travelers based on their experience" ;
+             rdfs:label "Recommended" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Confort
+:Seat_Confort rdf:type owl:Class ;
+              rdfs:subClassOf :Other_Rating ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :has_seat_comfort_rating ;
+                                owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ;
+              rdfs:comment "This class represents ratings or feedback on the comfort level of seats onboard an aircraft" ;
+              rdfs:label "Seat_Comfort" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Seat_Type
+:Seat_Type rdf:type owl:Class ;
+           rdfs:subClassOf :Comment_Data ;
+           rdfs:comment "his class represents different types of seating arrangements available on flights" ;
+           rdfs:label "Seat_Type" ;
+           rdfs:sameAs "http://dbpedia.org/page/Aircraft_seat"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Traveler_Type
+:Traveler_Type rdf:type owl:Class ;
+               rdfs:subClassOf :Comment_Data ;
+               rdfs:comment "This class represents different types of travelers" ;
+               rdfs:label "Traveler_Type" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Value_Money
+:Value_Money rdf:type owl:Class ;
+             rdfs:subClassOf :Other_Rating ;
+             rdfs:comment "This class represents ratings or assessments of the overall value or cost-effectiveness of a travel experience in relation to the price paid for it" ;
+             rdfs:label "Value_Money" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Verified
+:Verified rdf:type owl:Class ;
+          rdfs:subClassOf :Flight_Data ;
+          rdfs:comment "This class represents the verification status of a travel review" ;
+          rdfs:label "Verified" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Wifi_Conectivity
+:Wifi_Conectivity rdf:type owl:Class ;
+                  rdfs:subClassOf :Other_Rating ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :has_wifi_connectivity_rating ;
+                                    owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:integer
+                                  ] ;
+                  rdfs:comment "This class represents ratings or feedback regarding the availability, speed, and reliability of WiFi connectivity onboard" ;
+                  rdfs:label "Wifi_Connectivity" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Barcelona
+:Barcelona rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Boeing_737-800
+:Boeing_737-800 rdf:type owl:NamedIndividual ;
+                rdfs:comment "Represents the aircraft model used for the trip" ;
+                rdfs:label "Boeing_737-800" ;
+                rdfs:sameAs "http://dbpedia.org/page/Boeing_737-800"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Business
+:Business rdf:type owl:NamedIndividual ;
+          rdfs:comment "Represents the traveler type as business class" ;
+          rdfs:label "Business" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Economy_Class
+:Economy_Class rdf:type owl:NamedIndividual ;
+               rdfs:comment "Represents the seat type as economy class" ;
+               rdfs:label "Economy_Class" ;
+               rdfs:sameAs "http://dbpedia.org/page/Economy_class"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Germany
+:Germany rdf:type owl:NamedIndividual ;
+         rdfs:comment "Represents Germany as the country of the traveler" ;
+         rdfs:label "Germany" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Lisbon
+:Lisbon rdf:type owl:NamedIndividual ;
+        rdfs:comment "Represents Lisbon as the destination of the trip" ;
+        rdfs:label "Lisbon" ;
+        rdfs:sameAs "http://dbpedia.org/page/Lisbon"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#Trip_Verified
+:Trip_Verified rdf:type owl:NamedIndividual ;
+               owl:sameAs <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#1> ;
+               rdfs:comment "Indicates that the trip taken by a passenger has been validated" ;
+               rdfs:label "Trip_Verified" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#1
+
+###  http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#1
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu#1> rdf:type owl:NamedIndividual ;
+                                                                   rdfs:comment "Indicates that the trip taken by a passenger has been validated" ;
+                                                                   rdfs:label 1 .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+owl:Thing rdfs:comment "This class represents a general entity in the class hierarchy" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Aircraft_Model
+                :Destination
+                :Origin
+                :Verified
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Airline
+                :Comment
+                :Comment_Data
+                :Flight_Data
+                :Other_Rating
+                :Rating
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Cabin_Staff_Service
+                :Food_Beverages
+                :Ground_Service
+                :Inflight_Entertainment
+                :Seat_Confort
+                :Value_Money
+                :Wifi_Conectivity
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Comment_Body
+                :Passenger_Country
+                :Recommended
+                :Seat_Type
+                :Traveler_Type
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/model> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/groundServiceRating> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/airline> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/flight> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/traveler> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/rating> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/wifiRating> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Ground_Service_Satisfied" ;
+   rdfs:label "R1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Aircraft_Model ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/model>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_ground_service_rating ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/model> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/groundServiceRating>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/groundServiceRating> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 8 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> rdf:nil
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Seats" ;
+   rdfs:label "R2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_airline ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/model> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/airline>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_type_of_traveler ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/flight> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/traveler>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_seat_comfort_rating ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/flight> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/rating>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/rating> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 7 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_recommended ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/airline> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/traveler>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Wifi" ;
+   rdfs:label "R3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_wifi_connectivity_rating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/flight> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/wifiRating>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/wifiRating> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 9 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_recommended_wifi_connectivity ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/flight> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/usuario/ontologies/2024/3/OFSbyRedu/wifiRating>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
